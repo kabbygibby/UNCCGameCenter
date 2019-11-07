@@ -1,0 +1,177 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 7, 2019, 4:24:11 PM
+    Author     : kabbygibby
+*/
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family:sans-serif;
+  background-image: url('arcade.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+nav{
+  background: transparent;
+  height: 80px;
+  width: 100%;
+}
+img {
+    width: 15%;
+    height: 79px;
+    float: left;
+    border: 1px solid black;
+}
+label.logo{
+  color: white;
+  font-family: cursive;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 25px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: forestgreen;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    color: black;
+  }
+  a:hover,a.active{
+    background: none;
+    color: forestgreen;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+h1{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    text-indent: 425px;
+    font-family:fantasy;
+    
+}
+.login-page {
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+    
+}
+.form {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    max-width: 360px;
+    top: -125px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+.form button:hover, .form button:active {
+    background: #43A047;
+}
+.form .message {
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 12px;
+}
+.form .message a{
+    color: #4CAF50;
+    text-decoration: none;
+}
+.form .register-form {
+    display: none;
+}
