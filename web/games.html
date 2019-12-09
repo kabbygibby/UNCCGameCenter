@@ -22,7 +22,7 @@ and open the template in the editor.
             
                 </i>
             </label>
-            <img src="uncc.png" alt="UNCC Logo">
+            <img src="uncc.png" alt="UNCC Logo" id="logo">
             <label class="logo">Games</label>
             <ul><li><a class="active" href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -30,9 +30,18 @@ and open the template in the editor.
                 <li><a href="messages.html">Messages</a></li>
             </ul>
         </nav>
+        <form id="player-form">Playing with:<br><br>
+            <input type="radio" name ="friend" value ="friend">Friend<br>
+            <input type="radio" name ="random" value ="random">Random<br><br><br>
+        </form>
+        <form id="difficulty-form">Difficulty: <br><br>
+            <input type="radio" name ="Easy" value ="Easy">Easy<br>
+            <input type="radio" name ="Medium" value ="Medium">Medium<br>
+            <input type="radio" name ="Difficult" value ="Difficult">Difficult<br>
+        </form>
         
-        <a href="ChessGame.html"><img src="chess.png" alt="icon"></a>
-        <a href="checkers-index.html"><img src="favicon.png" alt="icon"></a>
+        <a href="ChessGame.html"><img src="chess.png" alt="icon" id="chessIcon"></a>
+        <a href="checkers-index.html"><img src="favicon.png" alt="icon" id="checkersIcon"></a>
         
     </body>
 </html>

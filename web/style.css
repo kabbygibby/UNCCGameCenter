@@ -27,11 +27,26 @@ nav{
   height: 80px;
   width: 100%;
 }
-img {
+#logo{
     width: 15%;
     height: 79px;
     float: left;
     border: 1px solid black;
+}
+
+#chessIcon{
+    float: none;
+    width: 100px;
+    height:100px;
+    margin-left:30%;
+    margin-top:10%;
+}
+#checkersIcon{
+     
+    width: 100px;
+    height:100px;
+    margin-left:40%;
+    margin-top:-10%;
 }
 label.logo{
   color: white;
@@ -174,4 +189,23 @@ h1{
 }
 .form .register-form {
     display: none;
+}
+#difficulty-form
+{
+    float:right;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+  
+    padding: 45px;
+    text-align: center;
+}
+#player-form
+{
+    float:right;
+    z-index: 1;
+    background: transparent;
+   margin-right: 15%;
+    padding: 45px;
+    text-align: center;
 }
