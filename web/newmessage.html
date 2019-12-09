@@ -10,7 +10,7 @@ and open the template in the editor.
         <title>Responsive NavBar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="newmessage.css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body>
@@ -23,23 +23,26 @@ and open the template in the editor.
                 </i>
             </label>
             <img src="uncc.png" alt="UNCC Logo" id="logo">
-            <label class="logo">About</label>
+            <label class="logo">Messages</label>
             <ul><li><a class="active" href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="games.html">Games</a></li>
                 <li><a href="messages.html">Messages</a></li>
             </ul>
         </nav>
-        <div class="container">
-<h2>Thank you for visiting UNCC GameCenter</h2><br/>
-<p>This website is to specifically connect UNC Charlotte students. The games
-here are to help students interact and have a fun time. There is a chat box to communicate
-with the student you are playing with so you can possibly make new friends!
-This website also comes with a messaging center that can keep your messages from your last
-game that you played. You will be able to see where you last talked and pick up the
-conversation later and many more!
-
-Thank you again for visiting our site!</p>
+        <div class="contact-title">
+            <h3> Say Hello </h3>
+            <h2> Send new message below! </h2>
+        </div>
+        
+        <div class="contact-form">
+            <form id="contact-form" method='post' action="">
+                <input name="name" type="text" class="form-control" placeholder="To: " required> <br>
+                <input name="subject" type="text" class="form-control" placeholder="Subject: " required> <br>
+                <textarea name="message" class="form-control" placeholder="Message: " rows="4" required></textarea> <br>
+               <a href="messages.html"><div class="submit">Submit</div></a>
+            </form>
         </div>
     </body>
 </html>
+

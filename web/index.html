@@ -10,9 +10,9 @@ and open the template in the editor.
         <title>Responsive NavBar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src="main.js"></script>
     </head>
     <body>
         <!--<h4>Click here to go to <a href="hello">MyServlet page</a></h4>-->
@@ -32,7 +32,7 @@ and open the template in the editor.
             </ul>
         </nav>
         
-        <div class="login-page">
+        <!--<div class="login-page">
             <div class="form">
                 <form class="register-form">
                     <input type="text" placeholder="Username"/>
@@ -40,18 +40,40 @@ and open the template in the editor.
                     <input type="text" placeholder="Student ID"/>
                     <input type="text" placeholder="Password"/>
                     <button>Create Account</button>
-                    <p class="message">Already Registered? <a href="login.html"> Login</a></p>
+                    <p class="message">Already Registered? <a href="#"> Login</a></p>
                 </form>
                 <form class="login-form">
                   <input type="text" placeholder="Username"/>  
                   <input type="password" placeholder="Password"/>
-                  <a href = "games.html"><button onclick="myFunction()">Login</button></a>
-                  <p class="message"> Not Registered? <a href="signin.html"> Register</a></p>
+                  <button>Login</button>
+                  <p class="message"> Not Registered? <a href="#"> Register</a></p>
                 </form>
                     
             </div>
-        </div>
+        </div>-->
         
+        <div class="wrapper">
+    <div class="container">
+      
+      <div class="signup">Sign Up</div>
+      <div class="login">Log In</div>
+      
+       <div class="signup-page">
+          <input type="text" placeholder="Your Email Address" class="input"><br />
+          <input type="text" placeholder="Choose a Username" class="input"><br />
+          <input type="text" placeholder="Student ID" class="input"><br />
+          <input type="password" placeholder="Choose a Password" class="input"><br />
+          <a href="messages.html"><div class="button">Create account</div></a>
+       </div>
+      
+      <div class="login-page">
+          <input type="text" placeholder="Email or Username" class="input"><br />
+          <input type="password" placeholder="Password" class="input"><br />
+          <a href="messages.html"><div class="button">log in</div></a>
+       </div>
+      
+    </div>
+  </div>
         
     </body>
 </html>

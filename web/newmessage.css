@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 9, 2019, 11:55:16 AM
+    Author     : kabbygibby
+*/
+.contact-title{
+    text-align: center;
+    margin-top: 75px;
+    color: forestgreen;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+
+.contact-title h3{
+
+    font-size: 32px;
+    line-height: 30px;
+    
+}
+
+.contact-title h2{
+    font-size: 16px;
+    
+}
+form {
+    text-align: center;
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.input{
+    height: 45px;
+    
+}
+.submit{
+    
+    width: 25%;
+  background: forestgreen;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  margin-left: 37%;
+
+}
+.submit:hover{
+    background-color: forestgreen;
+    cursor: pointer;
+    
+}
+.contact-form  input, .contact-form textarea{
+    border: none;
+    font-size: 18px;
+}

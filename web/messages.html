@@ -10,6 +10,7 @@ and open the template in the editor.
         <title>Responsive NavBar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="messages.css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body>
@@ -29,7 +30,73 @@ and open the template in the editor.
                 <li><a href="messages.html">Messages</a></li>
             </ul>
         </nav>
-        
+        <div id="chat-container">
+            <div id="search-container">
+                <input type="text" placeholder="Search" />
+            </div>
+            <div id="conversation-list">
+                <div class="conversation active">
+                    <img src="random.png" alt="Convo 1" />
+                    <div class="title-text">
+                        Garrett Bruss
+                    </div>
+                    <div class="created-date">Dec 9</div>
+                    <div class="conversation-message">Hey, How are you?</div>
+                </div>
+                <div class="conversation active">
+                    <img src="random2.png" alt="Convo 2" />
+                    <div class="title-text">
+                        Katherine Gibb
+                    </div>
+                    <div class="created-date">Dec 9</div>
+                    <div class="conversation-message">Hey, what's up?</div>
+                </div>
+                <div class="conversation active">
+                    <img src="random.png" alt="Convo 3" />
+                    <div class="title-text">
+                      Kayla Perry
+                    </div>
+                    <div class="created-date">Dec 9</div>
+                    <div class="conversation-message">Hey, you suck at this..</div>
+                </div>
+            </div>
+            
+            <div id="new-message-container">
+                <a href="newmessage.html">+</a>
+            </div>
+            <div id="chat-title">
+                <span>Garrett Bruss</span>
+                <img src="trash-icon.jpg" alt="Delete" id="trash"/>
+            </div>
+            <div id="chat-message-list">
+                <div class="message-row you-message">
+                    <div class="message-content">
+                      <div class="message-text">Just playing games wbu?</div>
+                    <div class="message-time">Dec 10</div>  
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <img src="random.png" alt="Garret Bruss" id="profile"/>
+                    <div class="message-text">I'm well whats up</div>
+                    <div class="message-time">Dec 9</div>
+                </div>
+                <div class="message-row you-message">
+                    <div class="message-content">
+                      <div class="message-text">I'm good wbu</div>
+                    <div class="message-time">Dec 10</div>  
+                    </div>
+                </div>
+                <div class="message-row other-message">
+                    <img src="random.png" alt="Garret Bruss" id="profile"/>
+                    <div class="message-text">Hey, How are you?</div>
+                    <div class="message-time">Dec 9</div>
+                </div>
+            </div>
+            <div id="chat-form">
+                <img src="attachment-logo.png" alt="add" id="attach"/>
+                <input type="text" placeholder="type a message" />
+            </div>
+        </div>
         
     </body>
 </html>
